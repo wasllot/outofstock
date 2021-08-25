@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "astrogrowshop-323820",
+  "private_key_id": "6d79579fbbb51d14311f8526fc92f16e9deb377e",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQDRmmBOPmKQQZYi\n1O9YacUJ8vOJIfe45F+pKPaVQAfDTpP+HQjh2XtA4jIAS1gZYNrkIGAKlO2kSNkW\nq8weNfqSah1zdXG9mcz0zAsKhY9VvAIPSu/BiTZy2sysYnsrMS+xvdFPdhq2J5vV\nC2kqPmn1j90AOBG4kVPgfuw9G7P+Q0wN+/1NIWQuSIrC2dGOILNS2l+7MZQj0o8+\nCJPs5EJx53xkt4XdS9vn9R7ii4fD2rbk12x9wSg8aIqLOfPvcGtyNJWkuy9Pilqu\nCqr8OJRPIFPJu9UnTica26JH4TY/SeJ/i0TI3rTh/VLabQSr2OhohMtREo5pEaCj\nF05O2FZ/AgMBAAECggEAVDjyBb6voEOabnidjCtED5FeJnZNsi+h+LkLDEHkXKhQ\nc0V7cjUPf6zkZpXf2qK+kfgoX1gkfWUARknWBTWvb/HPz7sbbxJD9wGeViYAyHR5\nZ2e3G09lX5VntMUFtP9YqNUbLBDK/vK/fUXOhjj6HsAmD5Z4GG/dAlI93vgoxTvO\nn8obOXWlvJVcUfoo6hZFPwIMsFqSapd2YQTe1P8l3pebEWxhSW5P8LT2KNX+9PnU\niNNVLD1EmbPvQM8JRaOPqU8OqEUayVJuPR8EucOecFXEYbrGxZRjAj3fppmCnyRy\ndwuzMFaOSKTbP+Zaw4salsoC6xSXj+umnyK2d3Pc8QKBgQD7vYGLmK1Ibkt9SCwo\nXl+R3lWZYwD+BLqDZK1VorpelWLBvTMHNRUIkmm20HDYjq8h3rUYroqCgt5cQD6i\nnavedV7/QvowE1/X4j3w81Epf2N6OgCFGuJizmaj479YbALb1iJ8MO03C3rWsu5t\n7yJJwiuxKi8XxGyrarcT/S8aEwKBgQDVJlbVwq1Q8Ui707N8J7uJp57ZpaL6ltd8\n0zNPTZ/l3dODfGFCCX02sfI6z3kebdZttGsZ0QRwRIx8Nh32pvnyXz7ZhgQ9DuRY\n1+ttj0SfcWGKam38HJEDU0XTv8Dz9sngz+Ju7JRHJ2EuUYOAVyCZiZYxh9pvlJym\nkUYP39JfZQKBgQCyRBNdkGN9PCWW9SnX+GSC/kftk89bEmwlqYCZeN+zJORHP7zH\n6M4ZQN09iUOwBvJ78KKbdNY+73+ZIiF4tGDF6qW3620R6FZhoSOt4g/ibAQ8xKAj\nodMYlwLWIewZKHupw2yuN1N0PFvjd9gh30qPosGf9rhcg0tU4//7VropIwKBgQCr\nXeGehp/1XafOasv427DpYTxTW9oGglPJZbvw3EXb91ZgdhVzlFF5MeO/6KJGFqS5\nGr6oyOU6pcIU8yVv8pstg+nx1M9/j4OC8kWzleXkErILKLo4YXctJzwSnC4zdoyk\nFD7GU6p68mwtYxfIjUQGbRm1xLWX0/GF8XJUvOxUCQKBgANqeQaMlJLX1GDbkSXs\nTJc8uqWcwuQFNTE5KBtd+DPNky2wpxQpYtdzi9gzl5CVw1YBbU6fji94yNiIUbEg\nIOXvGlRf5rkoevSASQxhvxAaruN58wmSEWK1UnhMa4O0t431APRb61arEeyPv1mI\npnBo5pMyj7GJBtefdToNxRBg\n-----END PRIVATE KEY-----\n",
+  "client_email": "fetch-data-analitycs-testing@astrogrowshop-323820.iam.gserviceaccount.com",
+  "client_id": "105558942451161206578",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/fetch-data-analitycs-testing%40astrogrowshop-323820.iam.gserviceaccount.com"
+}

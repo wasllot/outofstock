@@ -1,0 +1,23 @@
+{
+    "name": "user/analytics-out-of-stock-report",
+    "minimum-stability": "dev",
+    "autoload": {
+        "psr-4": {
+            "User\\AnalyticsOutOfStockReport\\": "src/"
+        },
+        "files": [
+            "vendor/prestaShop/prestaShop-webservice-lib/PSWebServiceLibrary.php"
+        ]
+    },
+    "authors": [
+        {
+            "name": "Reinaldo",
+            "email": "rei.vzl@gmail.com"
+        }
+    ],
+    "require": {
+        "google/apiclient": "2.0",
+        "phpoffice/phpspreadsheet": "^1.18",
+        "prestashop/prestashop-webservice-lib": "dev-master"
+    }
+}

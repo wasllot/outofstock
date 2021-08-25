@@ -1,0 +1,6 @@
+	protected $ASTRO_BASE_URL = 'https://astrogrowshop.cl';
+	protected $ASTRO_API_KEY = 'YL9FLI99UZIJQVMQPT1S1W6Z5TXSA8C9';
+	
+	// consultar primero producto y luego el stock_available
+	$astroXML = $webServiceAstro->get(['resource' => 'stock_availables/' . $product['astroID']]);
+	$astroStock = (int)$astroXML->stock_available->quantity;
