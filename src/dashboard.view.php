@@ -15,7 +15,6 @@
   <link rel="stylesheet" href="src/assets/vendor/nucleo/css/nucleo.css" type="text/css">
   <link rel="stylesheet" href="src/assets/vendor/@fortawesome/fontawesome-free/css/all.min.css" type="text/css">
   <!-- Page plugins -->
-  <!-- Argon CSS -->
   <link rel="stylesheet" href="src/assets/css/argon.css?v=1.2.0" type="text/css">
 </head>
 
@@ -279,7 +278,7 @@
       </footer>
     </div>
   </div>
-  <!-- Argon Scripts -->
+  
   <!-- Core -->
   <script src="src/assets/vendor/jquery/dist/jquery.min.js"></script>
   <script src="src/assets/vendor/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
@@ -289,7 +288,6 @@
   <!-- Optional JS -->
   <script src="src/assets/vendor/chart.js/dist/Chart.min.js"></script>
   <script src="src/assets/vendor/chart.js/dist/Chart.extension.js"></script>
-  <!-- Argon JS -->
   <script src="src/assets/js/argon.js?v=1.2.0"></script>
 </body>
 
