@@ -43,28 +43,33 @@ function product_list(){
     global $conn;
 
     $sql = 'SELECT * FROM product_data';
+    $result = getQuery($sql);
+    
+    return $result;
+}
 
-    $result = $conn->query($sql);
-    $array = array();
+function product_sessions(){
 
-    if ($result->rowCount() > 0) {
+    $sql = 'SELECT  SUM(product_sessions) as total_sessions FROM product_data';
+    $result = getQuery($sql);
 
-        while($row = $result->fetch(PDO::FETCH_ASSOC)) {
-            $data['id'] = $row['id'];
-            $data['product_sessions'] = $row['product_sessions'];
-            $data['product_page_views'] = $row['product_page_views'];
-            $data['product_url'] = $row['product_url'];
-            $data['product_said'] = $row['product_said'];
-            $data['product_variation_id'] = $row['product_variation_id'];
-            
-            array_push($array, $data);
-        }
+    return $result[0]['total_sessions'];
+}
 
-       return $array;
-    }
+function product_views(){
 
-    return null;
+    $sql = 'SELECT  SUM(product_page_views) as total_views FROM product_data';
+    $result = getQuery($sql);
 
+    return $result[0]['total_views'];
+}
+
+function total_products(){
+    
+    $sql = 'SELECT COUNT(*) as total_products FROM product_data';
+    $result = getQuery($sql);
+
+    return $result[0]['total_products'];
 }
 
 function delete_product($id) {
@@ -78,6 +83,7 @@ function delete_product($id) {
     return $q->execute([':id' => $id]);
 }
 
+
 function delete_all_data(){
     global $conn;
     
@@ -87,6 +93,38 @@ function delete_all_data(){
     return $q->execute();
 }
 
+//Get query
+
+function getQuery($sql){
+    global $conn;
+
+    if($sql){
+
+        $result = $conn->query($sql);
+        $array = array();
+    
+        if ($result->rowCount() > 0) {
+    
+            while($rows = $result->fetch(PDO::FETCH_ASSOC)) {
+                
+                foreach($rows as $key => $row){
+    
+                    $data[$key] = $row;
+                    
+                }
+    
+                array_push($array, $data);
+            }
+    
+           return $array;
+        }    
+
+
+    }
+
+    return null;
+
+}
 
 //Get product id from url
 function getProductIdFromURL($product_url){

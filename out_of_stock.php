@@ -6,7 +6,9 @@ include 'functions/products.php';
 
 // check_urls(get_product_data());
 // delete_all_data();
-show_data();
+// show_data();
+
+load_view();
 
 //Check if product's type simple or variable and try astro api call
 function check_urls($products_data){
@@ -156,4 +158,14 @@ function show_data(){
 
         foreach($products_data as $data) echo "ID: ".$data['id']." - Product Stock Available Id: ".$data['product_said']." - Session: ".$data['product_sessions']." - Page views: ".$data['product_page_views']." - Product URL ".$data['product_url']."<br>";
     }
+}
+
+function load_view(){
+
+    $products_data = product_list();
+    $product_sessions = product_sessions();
+    $product_total_views = product_views();
+    $total_products = total_products();
+
+    include "src/dashboard.view.php";
 }
