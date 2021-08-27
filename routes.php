@@ -20,10 +20,12 @@ $router->get('/dashboard/(\d+)/(\d+)/(\d+)', function($day, $month, $year) {
 	$dashboard->load_dashboard($date);
 });
 
+
 $router->get('/check-urls', function(){
 
 	global $dashboard;
 	$dashboard->check_urls();
+	
 });
 
 
