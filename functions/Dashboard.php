@@ -6,12 +6,6 @@ include 'functions/Products.php';
 
 class Dashboard {
 
-    //  check_urls();
-    // delete_all_data();
-    // show_data();
-
-    // load_view();
-
     //Check if product's type simple or variable and try astro api call
     static function check_urls(){
 

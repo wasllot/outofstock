@@ -19,8 +19,6 @@
   <link rel="stylesheet" href="http://localhost/analytics-out-of-stock-report/src/assets/css/style.css" type="text/css">
 </head>
 
-
-
 <body>
 
   <div id="date-picker-modal" class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
@@ -35,9 +33,6 @@
               <h4>No ha habido coincidencias con tu búsqueda</h4>
 
               </div>
-                      
-
-
           </div>
           <div class="col-md-7">
 
