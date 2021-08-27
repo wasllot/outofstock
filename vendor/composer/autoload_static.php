@@ -224,6 +224,13 @@ class ComposerStaticInit25186c222c4a7c0ee0e600f7292f95cb
                 0 => __DIR__ . '/..' . '/google/apiclient/src',
             ),
         ),
+        'B' => 
+        array (
+            'Bramus' => 
+            array (
+                0 => __DIR__ . '/..' . '/bramus/router/src',
+            ),
+        ),
     );
 
     public static $classMap = array (

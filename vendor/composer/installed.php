@@ -1,15 +1,24 @@
 <?php return array(
     'root' => array(
-        'pretty_version' => '1.0.0+no-version-set',
-        'version' => '1.0.0.0',
+        'pretty_version' => 'dev-master',
+        'version' => 'dev-master',
         'type' => 'library',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
-        'reference' => NULL,
+        'reference' => '0d4e37143b048fad37402a1338b6c8930d525a4c',
         'name' => 'user/analytics-out-of-stock-report',
         'dev' => true,
     ),
     'versions' => array(
+        'bramus/router' => array(
+            'pretty_version' => '1.6',
+            'version' => '1.6.0.0',
+            'type' => 'library',
+            'install_path' => __DIR__ . '/../bramus/router',
+            'aliases' => array(),
+            'reference' => 'd2cf97d5c471e272ac5a2a88b652bc75089c8ae3',
+            'dev_requirement' => false,
+        ),
         'ezyang/htmlpurifier' => array(
             'pretty_version' => 'v4.13.0',
             'version' => '4.13.0.0',
@@ -232,12 +241,12 @@
             'dev_requirement' => false,
         ),
         'user/analytics-out-of-stock-report' => array(
-            'pretty_version' => '1.0.0+no-version-set',
-            'version' => '1.0.0.0',
+            'pretty_version' => 'dev-master',
+            'version' => 'dev-master',
             'type' => 'library',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),
-            'reference' => NULL,
+            'reference' => '0d4e37143b048fad37402a1338b6c8930d525a4c',
             'dev_requirement' => false,
         ),
     ),

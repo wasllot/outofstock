@@ -18,11 +18,11 @@ function save_product($product_data){
             "product_page_views" => $product_data['product_page_views'],
             "product_url" => $product_data['product_url'],
             "product_said" => $product_data['product_stock_available_id'],
-            "product_variation_id" => $product_data['product_variation_id'],
+            "analytics_date" => $product_data['analytics_date'],
             
         );
 
-        $sql = "INSERT INTO product_data (product_sessions, product_page_views, product_url, product_said, product_variation_id)";
+        $sql = "INSERT INTO product_data (product_sessions, product_page_views, product_url, product_said, analytics_date)";
         $sql .= "values (:" . implode(", :", array_keys($product)) . ")";
         
         $q = $conn->prepare($sql);
@@ -37,6 +37,15 @@ function save_product($product_data){
     }
 }
 
+function product_list_by_date($date){
+    global $conn;
+
+    $sql = 'SELECT * FROM product_data WHERE analytics_date = "'.$date.'"';
+    $result = getQuery($sql);
+    
+    return $result;
+}
+
 
 
 function product_list(){
@@ -48,25 +57,26 @@ function product_list(){
     return $result;
 }
 
-function product_sessions(){
+function product_sessions($date){
+    global $conn;
 
-    $sql = 'SELECT  SUM(product_sessions) as total_sessions FROM product_data';
+    $sql = 'SELECT  SUM(product_sessions) as total_sessions FROM product_data WHERE analytics_date = "'.$date.'"';
     $result = getQuery($sql);
 
     return $result[0]['total_sessions'];
 }
 
-function product_views(){
+function product_views($date){
 
-    $sql = 'SELECT  SUM(product_page_views) as total_views FROM product_data';
+    $sql = 'SELECT  SUM(product_page_views) as total_views FROM product_data WHERE analytics_date = "'.$date.'"';
     $result = getQuery($sql);
 
     return $result[0]['total_views'];
 }
 
-function total_products(){
+function total_products($date){
     
-    $sql = 'SELECT COUNT(*) as total_products FROM product_data';
+    $sql = 'SELECT COUNT(*) as total_products FROM product_data WHERE analytics_date = "'.$date.'"';
     $result = getQuery($sql);
 
     return $result[0]['total_products'];

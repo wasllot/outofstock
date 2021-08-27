@@ -8,8 +8,8 @@ set_time_limit(0);
 
 require_once __DIR__ . '/vendor/autoload.php';
 include 'db_connection.php';
+include 'functions/Dashboard.php';
 
-
-include 'out_of_stock.php';
+include 'routes.php';
 
 $conn = null;

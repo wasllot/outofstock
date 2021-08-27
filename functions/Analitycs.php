@@ -1,11 +1,5 @@
 <?php
 
-// Load the Google API PHP Client Library.
-require_once __DIR__ . '/vendor/autoload.php';
-
-
-
-
 // printResults($results);
 
 
@@ -26,7 +20,7 @@ function initializeAnalytics()
   // Use the developers console and download your service account
   // credentials in JSON format. Place them in this directory or
   // change the key file location if necessary.
-  $KEY_FILE_LOCATION = __DIR__ . '/astrogrowshop-323820-6d79579fbbb5.json';
+  $KEY_FILE_LOCATION = __DIR__ . '/../astrogrowshop-323820-6d79579fbbb5.json';
 
   
   // Create and configure a new client object.
